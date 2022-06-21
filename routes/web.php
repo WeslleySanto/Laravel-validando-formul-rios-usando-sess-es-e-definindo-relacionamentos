@@ -22,3 +22,4 @@ Route::delete('/series/destroy/{series}', 'SeriesController@destroy')->name('del
 Route::get('/series/{series}/editar', 'SeriesController@edit')->name('form_editar');
 Route::put('/series/{series}/editar', 'SeriesController@update')->name('atualizar_serie');
 
+Route::get('series/{series}/seasons', 'SeasonsController@index')->name('listar_temporadas');
